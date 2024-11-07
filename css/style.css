@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .welcome h1 {
+    color: #007bff;
+    font-size: 2rem;
+  }
+  
+  .welcome p {
+    font-size: 1.1rem;
+  }
+  
+  /* Tab Navigation */
+  .tab-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tab-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .tab-btn:hover, .tab-btn.active {
+    background-color: #0056b3;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    display: none; /* Hide content by default */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-content h2 {
+    color: #007bff;
+  }
+  

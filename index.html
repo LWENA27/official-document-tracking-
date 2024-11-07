@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Document Tracker & Job Finder</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h1>Welcome to Document Tracker & Job Finder</h1>
+    <p>Your all-in-one platform to manage documents and find job opportunities with ease.</p>
+  </section>
+
+  <!-- Tab Navigation -->
+  <div class="tab-nav">
+    <button class="tab-btn" onclick="openTab(event, 'home')">Home</button>
+    <button class="tab-btn" onclick="openTab(event, 'upload')">Upload Document</button>
+    <button class="tab-btn" onclick="openTab(event, 'job-search')">Job Search</button>
+  </div>
+
+  <!-- Tab Content Sections -->
+  <div id="home" class="tab-content">
+    <h2>Home</h2>
+    <p>Explore the features to manage your documents and find new job opportunities.</p>
+  </div>
+
+  <div id="upload" class="tab-content" style="display: none;">
+    <h2>Upload Your Document</h2>
+    <form id="uploadForm">
+      <label for="docName">Document Name:</label>
+      <input type="text" id="docName" name="docName" required>
+
+      <label for="docFile">Upload File:</label>
+      <input type="file" id="docFile" name="docFile" accept=".pdf, .docx, .jpg" required>
+
+      <button type="submit">Upload Document</button>
+    </form>
+  </div>
+
+  <div id="job-search" class="tab-content" style="display: none;">
+    <h2>Search for Jobs</h2>
+    <form id="jobSearchForm">
+      <label for="keywords">Keywords:</label>
+      <input type="text" id="keywords" name="keywords" placeholder="e.g., Software Engineer" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="e.g., New York" required>
+
+      <button type="submit">Search Jobs</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
